@@ -1,0 +1,7 @@
+<launch>
+    <arg name="seq" value="seq_1"/>
+    <param name='seq' value='$(arg seq)'/>
+    <node pkg="hw1_pkg" type="bonus_task.py" name="bonus_task" output='screen'/>
+    <node pkg='rosbag' type='record' name='rosbag_record' args='-o $(find hw1_pkg)/result/$(arg seq).bag /me5413/tracked /me5413/gt /me5413/matric_number'/>
+    <node pkg="rosbag" type="play" name="rosbag" args="$(find hw1_pkg)/data/$(arg seq).bag"/>
+</launch>

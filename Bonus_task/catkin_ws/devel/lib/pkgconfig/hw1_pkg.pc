@@ -1,0 +1,8 @@
+prefix=/home/ubuntu2004/ME5413/catkin_ws/devel
+
+Name: hw1_pkg
+Description: Description of hw1_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

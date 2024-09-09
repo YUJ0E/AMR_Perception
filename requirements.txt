@@ -1,0 +1,7 @@
+numpy
+opencv_contrib_python
+opencv_python
+matplotlib
+rospy
+sensor_msgs
+std_msgs
